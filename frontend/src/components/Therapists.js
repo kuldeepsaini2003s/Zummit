@@ -219,7 +219,7 @@ const Therapists = () => {
                       <button class="bg-[#0190B1] text-white font-semibold py-2 px-4 rounded"
                         onClick={() => handleBook(therapist._id)}
                       >
-                        Book
+                        Book Appointment
                       </button>
                     </div>
                   </div>

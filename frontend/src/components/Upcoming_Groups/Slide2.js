@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 function Slide2() {
   return (
-    <div className="flex">
+    <div className="flex pb-10">
       <div className="flex justify-center items-center ">
         <div className="w-[50%]">
           <img
-            className="object-cover mt-8 pr-10  w-[50vw] h-[45vh]"
+            className="object-cover mt-8 pr-10 rounded-md  w-[50vw] h-[45vh]"
             src={require("../images/img.jpg")}
       
           ></img>
@@ -19,11 +19,11 @@ function Slide2() {
             and transform with both group & individual therapy's
           </p>
 
-          <Link to="/about" target="_top" className="self-end">
+          {/* <Link to="/about" target="_top" className="self-end">
             <a className="text-xl font-bold text-cyan-800">
               Know more
             </a>
-          </Link>
+          </Link> */}
 
         </div>
       </div>

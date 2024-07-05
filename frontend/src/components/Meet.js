@@ -38,7 +38,7 @@ const Meet = () => {
     <>
       <div className="bg-[#001618] text-white flex px-28 py-10 justify-between items-center">
         {/* Left side container */}
-        <div className="w-[35%] h-[80vh] flex flex-col justify-center gap-5">
+        <div className="w-[35%] h-[80vh] flex flex-col  pt-10 gap-5">
           <h1 className="text-4xl font-medium text-yellow ">
             Meet our Therapist
           </h1>
@@ -51,12 +51,12 @@ const Meet = () => {
             therapist, but with the ability to communicate when and how you
             want.
           </p>
-
+{/* 
           <Link to="/therapist" target="_top">
             <button className="bg-cyan-500 text-black text-xl font-medium rounded-md w-[35%] px-2 py-1">
               Know more
             </button>
-          </Link>
+          </Link> */}
 
         </div>
         {/* Right side container */}

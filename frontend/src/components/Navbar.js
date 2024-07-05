@@ -45,7 +45,7 @@ function Navbar() {
   };
 
   return (
-    <header className="flex flex-col justify-center px-16 py-6 text-xl  font-light text-white whitespace-nowrap bg-cyan-600 max-md:px-5">
+    <header className="flex flex-col justify-center px-16 py-6 text-xl  font-light text-white whitespace-nowrap bg-[#0190B1] max-md:px-5">
       <nav className="flex gap-8 justify-between items-center mr-4 ml-5 max-md:flex-wrap max-md:mr-2.5 max-md:max-w-full">
         <a
           href="/"

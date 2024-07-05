@@ -34,13 +34,7 @@ const Hero = () => {
     </div>
   );
 
-  const therapyOptions = [
-    {
-      title: "Individual Therapy",
-      imageUrl: "./images/Individual Therapy.png",
-      altText: "An icon representing individual therapy",
-      linkTo: "/services/individual-therapy",
-    },
+  const therapyOptions = [   
     {
       title: "Group Therapy",
       imageUrl: "./images/Group-Therapy-img.png",
@@ -52,6 +46,12 @@ const Hero = () => {
       imageUrl: "./images/Support_Group-img.png",
       altText: "An icon representing support group",
       linkTo: "/services/support-group",
+    },
+    {
+      title: "Individual Therapy",
+      imageUrl: "./images/Individual Therapy.png",
+      altText: "An icon representing individual therapy",
+      linkTo: "/services/individual-therapy",
     },
   ];
 

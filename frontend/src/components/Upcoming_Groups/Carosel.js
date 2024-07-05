@@ -24,9 +24,9 @@ export default function Carosel() {
           modules={[Pagination,Autoplay]}
           className="mySwiper"
         >
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <Slide1 />
-          </SwiperSlide>
+          </SwiperSlide> */}
           <SwiperSlide>
             <Slide2 />
           </SwiperSlide>
