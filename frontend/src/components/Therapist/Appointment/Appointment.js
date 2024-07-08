@@ -102,7 +102,7 @@ const Appointment = () => {
           />
         </div>
         <div className="p-2 cursor-pointer rounded-full ">
-           <img src={BellIcon} alt=" BellIcon " />
+          <img src={BellIcon} alt=" BellIcon " />
         </div>
       </div>
       {/* heading */}
@@ -110,43 +110,43 @@ const Appointment = () => {
         <h1>Appointments</h1>
       </div>
 
-      <div className="p-4 w-[95%] rounded-lg bg-white ">
+      <div className="p-4  rounded-lg bg-white ">
         <div className="bg-[#DCDCDD] text-lg  rounded-lg w-full p-2 text-black flex gap-2 items-center">
-          <h1 className="w-[10rem] ">Client Name</h1>
-          <h1 className="w-[10rem]">Appointment Time</h1>
-          <h1 className="w-[10rem] ">Therapy type</h1>
-          <h1 className="w-[5rem]  text-end">Amount</h1>
-          <h1 className="w-[7rem] ">Status</h1>
+          <h1 className="w-[18%] ">Client Name</h1>
+          <h1 className="w-[18%]">Appointment Time</h1>
+          <h1 className="w-[18%] ">Therapy type</h1>
+          <h1 className="w-[10%]  text-end">Amount</h1>
+          <h1 className="w-[14%] ">Status</h1>
           <h1>Reason</h1>
         </div>
 
         <div className="h-[100vh] mt-2 overflow-y-scroll">
           {appointmentsList.map((item) => (
             <div className="flex gap-2 w-full p-2 text-lg rounded-lg ">
-              <div className="w-[10rem] ">
+              <div className="w-[18%] ">
                 <h1>{item.clientName}</h1>
               </div>
-              <div className="w-[10rem] ">
-                <h1>{item.appointmentTime.date}</h1>
+              <div className="w-[18%] ">
+                <h1>{item.appointmentTime}</h1>
                 <p className="text-[#1e3f47] text-sm font-light">
                   <span>{item.appointmentTime.time}</span>
                 </p>
               </div>
-              <h1 className="w-[10rem] ">{item.therapyType}</h1>
-              <h1 style={getStyle(item.report)} className="w-[5rem] text-end ">
-                {item.amount}
+              <h1 className="w-[18%] ">{item.therapyType}</h1>
+              <h1 style={getStyle(item.report)} className="w-[10%] text-end ">
+                {item.Amount}
               </h1>
-              <div className="w-[7rem]">
+              <div className="w-[14%] flex justify-center items-center">
                 <button
                   style={{ backgroundColor: getButtonBgColor(item.report) }}
-                  className="py-1 rounded-md w-[6.5rem]"
+                  className="py-1 rounded-md w-[7rem] "
                 >
-                  {item.report}
+                  {item.Status}
                 </button>
               </div>
               <h1
                 style={{ color: getReasonColor(item.report) }}
-                className="w-[10rem] "
+                className="w-[10rem]  "
               >
                 {item.reason}
               </h1>

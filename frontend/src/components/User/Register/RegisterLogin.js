@@ -277,7 +277,7 @@ const Register__Login = () => {
                   onClick={handleSubmission}
                   className="w-[40%] rounded-lg bg-yellow p-2 text-green-500 "
                 >
-                  {signUp ? "Login" : "Send OTP"}
+                  {!signUp ? "Login" : "Send OTP"}
                 </button>
                 <p
                   onClick={handleClick}

@@ -130,7 +130,7 @@ function ShowBookingDetailsPage() {
         </div>
     </div>
        
-    </>)
+//     </>)
 }
 
 export default ShowBookingDetailsPage
