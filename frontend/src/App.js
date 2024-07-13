@@ -58,6 +58,12 @@ import UserProfile from "./components/User/Profile/UserProfile";
 import Create_Therapist_Credentail from "./components/Admin/Create_Therapist/Create_Therapist_Credentail";
 import Create_Another_Admin from "./components/Admin/Create_Admin/Create_Another_Admin";
 
+
+
+
+
+import IntakeResponse from "./components/Booking/IntakeResponse";
+
 const WithHeaderAndFooter = ({ children }) => (
   <>
     <Navbar />
@@ -228,7 +234,18 @@ const routes = [
   { path: "/user-resources", element: <UserResources /> },
   { path: "/bookingPage", element: <BookingPage /> },
   { path: "/TherapistDetailsPage/:id", element: <TherapistDetailsPage /> },
-  { path: "/BookTherapistPage", element: <BookTherapistPage /> },
+  { path: "/BookTherapistPage", 
+    children: [
+      {
+        path: "",
+        element: <BookTherapistPage />
+      },
+      {
+        path: "IntakeForm",
+        element: <IntakeResponse />
+      }
+    ]
+  },
   { path: "/ShowBookingDetailsPage", element: <ShowBookingDetailsPage /> },
   { path: "/admin-dashboard", element: <AdminDashboard /> },
   { path: "/admin-appointments", element: <Admin_Appointments /> },

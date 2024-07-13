@@ -1,5 +1,7 @@
 import React, { useState,useRef } from "react";
 import { Link } from "react-router-dom";
+import SearchContainer from "../SearchContainer";
+import PrivacyPolicy from "./PrivacyPolicy";
 
 const Section = ({ title, description, isVisible, toggleVisibility }) => {
 
@@ -60,11 +62,11 @@ const Section = ({ title, description, isVisible, toggleVisibility }) => {
 };
 
 const FAQs = () => {
+  const PrintRef = useRef();
   const [showPrivacy, setShowPrivacy] = useState(false);
   const togglePrivacyPopup = () => {
     setShowPrivacy(!showPrivacy);
   };
-  const PrintRef = useRef();
   const [sectionConfig, setSectionConfig] = useState({
     showAbout: false,
     showTeam: false,
@@ -131,6 +133,7 @@ const FAQs = () => {
 
   return (
     <div className="mb-16 w-full p-4">
+      <SearchContainer/>
       <div>
         <p className="text-2xl font-medium mb-10 ml-5">FAQ</p>
       </div>
@@ -287,6 +290,7 @@ const FAQs = () => {
         </div>
       </div>
       {showPrivacy && (
+
         <div className="background-overlay">
           <div className="fixed inset-0 flex items-center justify-center z-50  ">
             <div className="privacy-popup ">
@@ -478,6 +482,10 @@ const FAQs = () => {
           </div>
         </div>
       )}
+
+        <PrivacyPolicy togglePrivacyPopup={togglePrivacyPopup} />
+      )} 
+
     </div>
   );
 };
