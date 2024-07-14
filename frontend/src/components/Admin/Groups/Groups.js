@@ -30,6 +30,8 @@ const Groups = () => {
         <div className="flex items-center bg-white w-[70%] border  pl-4 rounded-lg border-[#B4F0FF] ">
          <img src={SearchBar} alt="SearchBar"/>
 
+         <img src={SearchBar} alt="SearchBar"/>
+
           <input
             type="text"
             placeholder="Search"

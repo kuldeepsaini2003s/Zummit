@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import SearchBar from "../../images/SVG_files/SearchBar.svg";
-
 import BellIcon from "../../images/SVG_files/BellIcon.svg";
 import { BASE_ADMIN} from "../../../utils/constants";
 
@@ -58,6 +57,8 @@ const Transactions = () => {
       {/* Search Bar */}
       <div className="flex justify-center gap-10 items-center">
         <div className="flex items-center bg-white w-[70%]  pl-4 rounded-lg-[#B4F0FF] ">
+         <img src={SearchBar} alt="SearchBar"/>
+
          <img src={SearchBar} alt="SearchBar"/>
 
           <input

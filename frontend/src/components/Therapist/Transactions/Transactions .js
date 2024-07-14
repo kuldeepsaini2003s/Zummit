@@ -53,6 +53,8 @@ const Transactions = () => {
         <div className="flex items-center bg-white w-[70%]  pl-4 rounded-lg-[#B4F0FF] ">
          <img src={SearchBar} alt="SearchBar"/>
 
+         <img src={SearchBar} alt="SearchBar"/>
+
           <input
             type="text"
             placeholder="Search"
