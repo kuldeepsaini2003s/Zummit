@@ -37,9 +37,6 @@ const Client = () => {
       <div className="flex justify-between gap-10 items-center">
         <div className="flex items-center bg-white w-[80%] border  pl-4 rounded-lg border-[#B4F0FF] ">
           <img src={SearchBar} alt="SearchBar" />
-
-         <img src={SearchBar} alt="SearchBar"/>
-
           <input
             type="text"
             placeholder="Search"

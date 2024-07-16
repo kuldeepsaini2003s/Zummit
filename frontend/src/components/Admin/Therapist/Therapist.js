@@ -82,6 +82,7 @@ const Therapist = () => {
         </button>
       </div>
       <div className="w-[95%]  flex justify-end items-center mb-5">
+        {/* Downlaod Icon */}
         <svg
           width="32"
           height="32"

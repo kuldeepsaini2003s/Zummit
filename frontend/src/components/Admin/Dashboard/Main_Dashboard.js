@@ -82,6 +82,7 @@ const Main_Dashboard = () => {
   const pendingStyle = { color: "#FED365" };
   const publishedStyle = { color: "#02B04A" };
 
+  // Clock Icon
   const PendingIcon = (
     <svg
       width="14"
@@ -107,6 +108,7 @@ const Main_Dashboard = () => {
     </svg>
   );
 
+  // Check Icon
   const PublishedIcon = (
     <svg
       width="14"
@@ -168,6 +170,7 @@ const Main_Dashboard = () => {
               ))}
               <div className="flex justify-end items-center mt-3 mb-8">
                 <div className="cursor-pointer bg-[#0190B1] flex justify-center items-center h-14 w-14 text-center rounded-full">
+                  {/* Plus Icon */}
                   <svg
                     width="14"
                     height="14"
@@ -227,6 +230,7 @@ const Main_Dashboard = () => {
 
                   <h1 className="flex justify-center items-center text-[#0190b1] gap-2 cursor-pointer">
                     Edit
+                    {/* Edit Icon */}
                     <svg
                       width="14"
                       height="14"

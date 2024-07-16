@@ -6,7 +6,7 @@ import { BASE_ADMIN } from "../../../utils/constants";
 import { useNavigate } from "react-router-dom";
 
 const Resources = () => {
-  const [addedReview, setAddedReview] = useState([])
+  const [addedReview, setAddedReview] = useState([]);
 
   useEffect(() => {
     axios
@@ -91,9 +91,6 @@ const Resources = () => {
       <div className="flex justify-between gap-10 items-center">
         <div className="flex items-center bg-white w-[80%] border  pl-4 rounded-lg border-[#B4F0FF] ">
           <img src={SearchBar} alt="SearchBar" />
-
-         <img src={SearchBar} alt="SearchBar"/>
-
           <input
             type="text"
             placeholder="Search"
